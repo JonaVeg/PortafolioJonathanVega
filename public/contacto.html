@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Portafolio</title>
+  <link rel="icon" href="imagenes/loga.ico" type="image/x-icon">
+  <!-- Required meta tags -->
+  <meta name="google-site-verification" content="WCIaxnkbGDUqo5LA8n0ifDrh7yK4bH3MRCZCr8XmOiE" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    
+  <link rel="stylesheet" href="Styles/stylecontactos.css">
+    
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+  <!-- FontsAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  
+
+    <!-- Firebase -->
+
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+
+</head>
+
+<body>
+
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand text-capitalize" href="index.html">Jonathan Vega</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portafolio.html">Portafolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html"></a> 
+                    </li>
+                </ul>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/Becajona"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/jonathan-vega-562723297/"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </nav>
+</header>
+  <section class="contact-section">
+    <div class="container">
+      <h2 class="text-center mb-4 display-4">Contáctame</h2>
+  
+      <section class="container mt-5">
+        <br>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="text-center">
+              <i class="bi bi-phone fs-1 text-primary"></i>
+              <h4>Teléfono</h4>
+              <p><strong>Teléfono:</strong> +52 2225402887</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="text-center">
+              <i class="bi bi-envelope fs-1 text-primary"></i>
+              <h4>Correo Electrónico</h4>
+              <p><strong>Correo Electrónico:</strong> <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=jrjtXJRtcSmVzFcmdGFJWNlbSFKRBXKZJFGVJhmFMGGhsBTJgSDjJRthnVjkSpVwsCcGNlbX">jonalogictech@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="text-center">
+              <i class="bi bi-geo-alt fs-1 text-primary"></i>
+              <h4>Dirección</h4>
+              <p><strong>Dirección:</strong> Ciudad de Puebla</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+
+<br><br><br><br>
+<div class="container my-5">
+  <h1 class="mb-4">Contáctame</h1>
+  <form id="contactForm">
+      <div class="form-group">
+          <label for="name">Nombre</label>
+          <input type="text" class="form-control" id="nombre" required>
+      </div>
+      <div class="form-group">
+          <label for="email">Correo Electrónico</label>
+          <input type="email" class="form-control" id="email" required>
+      </div>
+      <div class="form-group">
+          <label for="subject">Asunto</label>
+          <input type="text" class="form-control" id="asunto" required>
+      </div>
+      <div class="form-group">
+          <label for="phone">Número de teléfono</label>
+          <input type="number" class="form-control" id="telefono">
+      </div>
+      <div class="form-group">
+        <label for="howDidYouHear">¿Cómo se enteró de nosotros?</label>
+        <select class="form-control" id="howDidYouHear" required>
+            <option value="">Seleccione una opción</option>
+            <option value="internet">Internet</option>
+            <option value="amigo">Recomendación de un amigo</option>
+            <option value="publicidad">Publicidad</option>
+            <option value="redessociales">Redes sociales</option>
+            <option value="otros">Otros</option>
+        </select>
+    </div>
+      <div class="form-group">
+          <label for="message">Mensaje</label>
+          <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+      </div>
+      <br>
+      
+      <button type="submit" class="btn btn-primary">Enviar</button>
+
+      
+  </form>
+  <div id="successMessage" class="alert alert-success mt-3" style="display:none;">
+    ¡Gracias por contactarnos! Tu mensaje ha sido enviado con éxito. Nos pondremos en contacto contigo a la brevedad posible.
+  </div>
+</div>
+
+<script>
+  // Configura tu proyecto Firebase
+  var firebaseConfig = {
+    apiKey: "AIzaSyCaGaqkFjt11rjCZ2tscCy3YimzJV_gido",
+    authDomain: "jonalogic-c8ecf.firebaseapp.com",
+    projectId: "jonalogic-c8ecf",
+    storageBucket: "jonalogic-c8ecf.appspot.com",
+    messagingSenderId: "67802613164",
+    appId: "1:67802613164:web:37579fb27c06b11dde6609"
+  };
+  // Inicializa Firebase
+  firebase.initializeApp(firebaseConfig);
+  var db = firebase.firestore();
+
+  // Manejar el envío del formulario
+  document.getElementById('contactForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      var name = document.getElementById('nombre').value;
+      var email = document.getElementById('email').value;
+      var subject = document.getElementById('asunto').value;
+      var phone = document.getElementById('telefono').value;
+      var howDidYouHear = document.getElementById('howDidYouHear').value;
+      var message = document.getElementById('mensaje').value;
+
+      db.collection("contacts").add({
+          name: name,
+          email: email,
+          subject: subject,
+          phone: phone,
+          howDidYouHear: howDidYouHear,
+          message: message,
+          timestamp: firebase.firestore.FieldValue.serverTimestamp()
+      })
+      .then(function () {
+          document.getElementById('successMessage').style.display = 'block';
+          document.getElementById('contactForm').reset();
+      })
+      .catch(function (error) {
+          console.error("Error al enviar el mensaje: ", error);
+      });
+  });
+</script>
+
+
+<br><br><br><br><br><br><br><br><br><br>
+
+
+<script>
+  document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+</script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+</script>
+
+<script src="funcionestelefono.js"></script> <!-- Funcionalidad del telefono -->
+<script src="funcioneswhatsapp.js"></script> <!-- Funcionalidad del telefono -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4675509302516533"
+     crossorigin="anonymous"></script>
+
+
+
+<script type="module">
+  importScripts('https://www.gstatic.com/firebasejs/10.12.1/firebase-app.js');
+  importScripts('https://www.gstatic.com/firebasejs/10.12.1/firebase-messaging.js');
+  
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyCaGaqkFjt11rjCZ2tscCy3YimzJV_gido",
+  authDomain: "jonalogic-c8ecf.firebaseapp.com",
+  projectId: "jonalogic-c8ecf",
+  storageBucket: "jonalogic-c8ecf.appspot.com",
+  messagingSenderId: "67802613164",
+  appId: "1:67802613164:web:37579fb27c06b11dde6609"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const messaging = getMessaging(app);
+
+// Request permission to send notifications and get the token
+async function requestPermission() {
+  try {
+    const currentToken = await getToken(messaging, {
+      vapidKey: "BAUmoL2l5lUV_HQdtk8JNN9bArmDQJCIjKsMfBUTc244gpxoZqhBYJpCvG4rmC_PBiKJ-chkMtgid_z-9yWhZuM"
+    });
+    if (currentToken) {
+      console.log('Current token:', currentToken);
+      // Send this token to your server and save it for future notifications
+    } else {
+      console.log('No registration token available. Request permission to generate one.');
+    }
+  } catch (error) {
+    console.error('An error occurred while retrieving token. ', error);
+  }
+}
+
+requestPermission();
+
+// Listen for messages
+onMessage(messaging, (payload) => {
+  console.log('Message received. ', payload);
+  const messagesElement = document.querySelector('.message');
+  const dataHeaderElement = document.createElement('h5');
+  const dataElement = document.createElement('pre');
+  dataElement.style = "overflow-x: hidden;";
+  dataHeaderElement.textContent = "Message Received:";
+  dataElement.textContent = JSON.stringify(payload, null, 2);
+  messagesElement.appendChild(dataHeaderElement);
+  messagesElement.appendChild(dataElement);
+});
+
+</script>
+
+</body>
+
+</html>

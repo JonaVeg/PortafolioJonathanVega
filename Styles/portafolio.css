@@ -1,0 +1,72 @@
+body {
+    background-color: #F4F4F9;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-brand {
+    font-size: 24px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.project-card {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.btn-primary {
+    background-color: #00ADB5;
+    border-color: #00ADB5;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #007B7F;
+}
+
+footer {
+    background-color: #333;
+    color: #FFFFFF;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+
+
+
+
+
+/*Inicio de Css de certificados
+
+
+/*Final de Css de certificados
